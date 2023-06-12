@@ -1,0 +1,107 @@
+.div-button{
+  position: static;
+  
+  margin-top: 0px;
+  background: white;
+  
+  }
+  .fa-square-plus{
+    color: rgb(191, 92, 6);
+    font-size: 26px;
+  }
+  .div-button button{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 7px;
+  }
+  .heyy{
+    display: flex;
+    justify-content: center;
+  }
+  .main-page{
+    display: flex;
+    justify-content: center;
+  }
+  h1{
+    text-align: center;
+  }
+  
+  .makola input{
+    height: 20px;
+    width: 300px;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    outline: none;
+    background: white;
+    padding: 10px;
+  }
+  .makola.invalid input{
+    border: 1px solid red;
+    border-radius: 4px 0px 0px 4px;
+    background: rgb(245, 197, 197);
+  }
+  input:focus{
+    background: rgb(251, 251, 251);
+  }
+  
+  .setet{
+    margin-left: 10px;
+  }
+  select{
+    height: 40px;
+  }
+  
+  .noun{
+    background: white;
+    width: 250px;
+    margin-top: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pronoun{
+    margin-right: 140px;
+    margin-top: 0px;
+  }
+  p{
+    margin-left: 10px;
+  }
+  .woman{
+    display: flex;
+    align-items: center;
+  }
+  .check{
+    border: none;
+    outline: none;
+    background: rgb(89, 230, 218);
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .trash{
+    border: none;
+    outline: none;
+    background:  rgb(191, 92, 6);
+    padding: 6px;
+    margin-top: 10px;
+  }
+  .trash button{
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  .fa-trash-can{
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .fa-check{
+    font-size: 13px;
+  }
+  h3{
+    font-family: 'Playfair Display', serif;
+    margin-top: 50px;
+  }

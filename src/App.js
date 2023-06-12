@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-
+import GetList from './components/GetList';
+import Heading from './components/Heading';
+import Mainpage from './components/Mainpage';
+import { useState } from 'react';
 function App() {
+  // const message = [{
+  //   title : "One",
+  //   id : 1
+  // }]
+
+  const [takeMessage, setTakeMessage] = useState([])
+const perform =(prev)=>{
+setTakeMessage((previous)=>{
+  return [...previous, prev]
+})
+}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Heading/>
+      <Mainpage onLasttkeForm = {perform}/>
+      <GetList retrieve={takeMessage} takeMessage={takeMessage
+      } setTakeMessage={setTakeMessage}/>
     </div>
   );
 }
-
 export default App;
